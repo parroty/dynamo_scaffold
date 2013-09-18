@@ -1,0 +1,26 @@
+<h1>Weather</h1>
+
+<p>
+  <b>Title</b><br>
+  <%= h(@weather.city) %>
+</p>
+
+<p>
+  <b>Temp Lo.</b><br>
+  <%= h(@weather.temp_lo) %>
+</p>
+
+<p>
+  <b>Temp Hi.</b><br>
+  <%= h(@weather.temp_hi) %>
+</p>
+
+<p>
+  <b>Prcp</b><br>
+  <%= h(@weather.prcp) %>
+</p>
+
+<div class="form-actions">
+  <a href="/" class="btn btn-default">Back</a>
+  <a href="/<%= @weather.id %>/edit" class="btn btn-default">Edit</a>
+</div>

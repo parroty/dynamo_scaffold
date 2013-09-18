@@ -1,0 +1,30 @@
+<h1>Weather</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>City</th>
+      <th>Temp Lo.</th>
+      <th>Temp Hi.</th>
+      <th>Prcp</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= lc item inlist @items do %>
+      <tr>
+        <td><%= h(item.id) %></td>
+        <td><a href="/<%= item.id %>"><%= h(item.city) %></a></td>
+        <td><%= h(item.temp_lo) %></td>
+        <td><%= h(item.temp_hi) %></td>
+        <td><%= h(item.prcp) %></td>
+        <td>
+          <a href="/<%= item.id %>/edit" class="btn btn-default btn-xs">Edit</a>
+          <a href="/" id="destroy_<%= item.id %>" class="btn btn-xs btn-danger" onclick="handle_destroy('<%= item.id %>');">Destroy</a>
+          </form>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<a href="/new" class="btn btn-primary">New</a>
