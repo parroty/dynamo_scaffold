@@ -39,7 +39,7 @@ defmodule ApplicationRouter do
   end
 
   @doc "update"
-  post "/:id" do
+  put "/:id" do
     params  = Dict.get(conn.params, :weather) |> parse_weather
     weather = Repo.get(Weather, get_id(conn.params))
     weather.update(params) |> Repo.update

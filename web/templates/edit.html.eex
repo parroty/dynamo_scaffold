@@ -1,4 +1,6 @@
 <form action="/<%= @weather.id%>" class="form-horizontal" id="edit_post" method="post">
+  <input type="hidden" name="_method" value="PUT" />
+
   <fieldset>
     <legend>Edit Post</legend>
 
