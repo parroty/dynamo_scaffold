@@ -21,6 +21,11 @@
 </p>
 
 <div class="form-actions">
-  <a href="/" class="btn btn-default">Back</a>
-  <a href="/<%= @weather.id %>/edit" class="btn btn-default">Edit</a>
+  <form action="/<%= @weather.id %>" method="post">
+    <a href="/" class="btn btn-default">Back</a>
+    <a href="/<%= @weather.id %>/edit" class="btn btn-default">Edit</a>
+    <input type="hidden" name="_method" value="DELETE" />
+    <input class="btn btn-default btn-danger" name="commit" type="submit" value="Destroy" onclick="return confirm('Are you sure?')" />
+  </form>
+
 </div>

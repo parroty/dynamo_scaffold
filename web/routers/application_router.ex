@@ -1,5 +1,6 @@
 defmodule ApplicationRouter do
   use Dynamo.Router
+  filter Dynamo.Filters.MethodOverride
 
   prepare do
     conn = conn.fetch([:cookies, :params])
