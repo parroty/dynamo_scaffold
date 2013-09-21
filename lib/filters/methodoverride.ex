@@ -1,4 +1,4 @@
-defmodule Dynamo.Filters.MethodOverride do
+defmodule DynamoScaffold.Filters.MethodOverride do
   @moduledoc """
   A filter to overwrite "POST" method with the one defined in _method parameter.
   """
