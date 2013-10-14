@@ -20,7 +20,7 @@ defmodule DynamoScaffold.Mixfile do
   defp deps do
     [
       { :cowboy, github: "extend/cowboy" },
-      { :dynamo, "0.1.0-dev", github: "parroty/dynamo", branch: "feature" } ,
+      { :dynamo, "0.1.0-dev", github: "elixir-lang/dynamo"},
       { :ecto, github: "elixir-lang/ecto" },
       { :pgsql, github: "ericmj/pgsql", branch: "elixir" }
     ]
