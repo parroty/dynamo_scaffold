@@ -59,9 +59,9 @@ defmodule ApplicationRouter do
   defp parse_weather(param) do
     [
       city:    Dict.get(param, :city),
-      temp_lo: Dict.get(param, :temp_lo) |> binary_to_integer,
-      temp_hi: Dict.get(param, :temp_hi) |> binary_to_integer,
-      prcp:    Dict.get(param, :prcp)    |> binary_to_float
+      temp_lo: Dict.get(param, :temp_lo) |> String.strip |> binary_to_integer,
+      temp_hi: Dict.get(param, :temp_hi) |> String.strip |> binary_to_integer,
+      prcp:    Dict.get(param, :prcp)    |> String.strip |> Float.parse |> elem 0
     ]
   end
 end
