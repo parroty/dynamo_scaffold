@@ -61,7 +61,7 @@ defmodule ApplicationRouter do
       city:    Dict.get(param, :city),
       temp_lo: Dict.get(param, :temp_lo) |> binary_to_integer,
       temp_hi: Dict.get(param, :temp_hi) |> binary_to_integer,
-      prcp:    Dict.get(param, :prcp)    |> String.to_float |> elem 0
+      prcp:    Dict.get(param, :prcp)    |> binary_to_float
     ]
   end
 end
