@@ -1,9 +1,9 @@
 [ "cowboy": {:git, "git://github.com/extend/cowboy.git", "df818625545d565b8b76fbc445063a4822114b93", []},
   "cowlib": {:git, "git://github.com/extend/cowlib.git", "63298e8e160031a70efff86a1acde7e7db1fcda6", [{:ref, "0.4.0"}]},
-  "dynamo": {:git, "git://github.com/elixir-lang/dynamo.git", "6e92de08f7e20e23264f8a24a2f1b1aeb04f96a3", []},
-  "ecto": {:git, "git://github.com/elixir-lang/ecto.git", "329dcd5a555906e29dcb62356727e6e5bf1f3e05", []},
+  "dynamo": {:git, "git://github.com/elixir-lang/dynamo.git", "3f90f9cf7aadc5ca7bdd90c9c5d1fc9be6e757bd", []},
+  "ecto": {:git, "git://github.com/elixir-lang/ecto.git", "cd3ab92322b5c8b00ef3d35bd44dbbf250cdf877", []},
   "mimetypes": {:git, "git://github.com/spawngrid/mimetypes.git", "47d37a977a7d633199822bf6b08353007483d00f", []},
   "pgsql": {:git, "git://github.com/ericmj/pgsql.git", "ac8c0f65098d8d5ffafa613f54945ebfa7377983", [{:branch, "elixir"}]},
   "poolboy": {:git, "git://github.com/devinus/poolboy.git", "c2c939b51aba06790ca51fa78b14c254a6ea977d", []},
-  "postgrex": {:git, "git://github.com/ericmj/postgrex.git", "3424ee5334af9f52cde3a2f90a452e73fd20be0f", []},
+  "postgrex": {:git, "git://github.com/ericmj/postgrex.git", "b7cc22ee67526baf56eca1eda54485ccfcd088db", []},
   "ranch": {:git, "git://github.com/extend/ranch.git", "5df1f222f94e08abdcab7084f5e13027143cc222", [{:ref, "0.9.0"}]} ]

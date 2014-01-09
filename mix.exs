@@ -22,7 +22,6 @@ defmodule DynamoScaffold.Mixfile do
       { :cowboy, github: "extend/cowboy" },
       { :dynamo, "0.1.0-dev", github: "elixir-lang/dynamo"},
       { :ecto, github: "elixir-lang/ecto" },
-      { :postgrex, github: "ericmj/postgrex" }
     ]
   end
 end
