@@ -25,6 +25,10 @@ defmodule Repo do
   def url do
     "ecto://postgres:postgres@localhost/ecto_simple"
   end
+
+  def priv do
+    app_dir(:dynamo_scaffold, "priv/repo")
+  end
 end
 
 defmodule Weather do
