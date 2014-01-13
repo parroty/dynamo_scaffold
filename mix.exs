@@ -19,9 +19,9 @@ defmodule DynamoScaffold.Mixfile do
   defp deps do
     [
       { :cowboy, github: "extend/cowboy" },
-      { :postgrex, github: "ericmj/postgrex", optional: true },
+      { :postgrex, github: "ericmj/postgrex" },
       { :ecto, github: "elixir-lang/ecto" },
-      { :dynamo, "~> 0.1.0-dev", github: "elixir-lang/dynamo"}
+      { :dynamo, "~> 0.1.0-dev", github: "dynamo/dynamo"}
     ]
   end
 end
