@@ -1,6 +1,6 @@
 [ "cowboy": {:git, "git://github.com/extend/cowboy.git", "0ec713fc4b185c3cd0f6b2e7ec2c5f198361bddd", []},
   "cowlib": {:git, "git://github.com/extend/cowlib.git", "63298e8e160031a70efff86a1acde7e7db1fcda6", [ref: "0.4.0"]},
-  "dynamo": {:git, "git://github.com/dynamo/dynamo.git", "bf865669ff76c975d1513733c945fc2179e8945e", []},
+  "dynamo": {:git, "git://github.com/dynamo/dynamo.git", "d06c2877452d95850108b22dfee7b9a01b8d9ac5", []},
   "ecto": {:git, "git://github.com/elixir-lang/ecto.git", "6758e958db2099e104be906b31f85c76a898a484", []},
   "mimetypes": {:git, "git://github.com/spawngrid/mimetypes.git", "47d37a977a7d633199822bf6b08353007483d00f", []},
   "poolboy": {:git, "git://github.com/devinus/poolboy.git", "c2c939b51aba06790ca51fa78b14c254a6ea977d", []},
