@@ -1,8 +1,10 @@
 [ "cowboy": {:git, "git://github.com/extend/cowboy.git", "0ec713fc4b185c3cd0f6b2e7ec2c5f198361bddd", []},
   "cowlib": {:git, "git://github.com/extend/cowlib.git", "63298e8e160031a70efff86a1acde7e7db1fcda6", [ref: "0.4.0"]},
-  "dynamo": {:git, "git://github.com/dynamo/dynamo.git", "d06c2877452d95850108b22dfee7b9a01b8d9ac5", []},
-  "ecto": {:git, "git://github.com/elixir-lang/ecto.git", "6758e958db2099e104be906b31f85c76a898a484", []},
+  "decimal": {:git, "git://github.com/ericmj/decimal.git", "33b52b6d8fec1e18245fbd7f1312a43103e25f5b", []},
+  "dynamo": {:git, "git://github.com/dynamo/dynamo.git", "dbccc1c65bf4027284e8f655acd2f39587851b64", []},
+  "ecto": {:git, "git://github.com/elixir-lang/ecto.git", "9ec515045b39d25204eda2b60a8c771a6cbb9239", []},
+  "mime": {:git, "git://github.com/dynamo/mime.git", "7e56a3dd5692afcd39c9797ae2898c5841967098", []},
   "mimetypes": {:git, "git://github.com/spawngrid/mimetypes.git", "47d37a977a7d633199822bf6b08353007483d00f", []},
   "poolboy": {:git, "git://github.com/devinus/poolboy.git", "c2c939b51aba06790ca51fa78b14c254a6ea977d", []},
-  "postgrex": {:git, "git://github.com/ericmj/postgrex.git", "a84ab254c04dff0de6c34a00bb79039efd220762", []},
+  "postgrex": {:git, "git://github.com/ericmj/postgrex.git", "7b99b4c4934b84d9afc42c77f99767b68b95e0b0", []},
   "ranch": {:git, "git://github.com/extend/ranch.git", "5df1f222f94e08abdcab7084f5e13027143cc222", [ref: "0.9.0"]} ]
