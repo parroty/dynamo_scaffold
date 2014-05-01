@@ -34,7 +34,7 @@ defmodule ApplicationRouter do
   @doc "create"
   post "/" do
     params = Dict.get(conn.params, :weather) |> parse_weather
-    Weather.new(params) |> Repo.create
+    Weather.new(params) |> Repo.insert
     redirect conn, to: "/"
   end
 
