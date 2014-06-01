@@ -15,7 +15,7 @@ defmodule ApplicationRouter do
 
   @doc "new"
   get "/new" do
-    conn = conn.assign(:weather, Weather.new)
+    conn = conn.assign(:weather, %Weather{})
     render conn, "new.html"
   end
 
@@ -33,16 +33,16 @@ defmodule ApplicationRouter do
 
   @doc "create"
   post "/" do
-    params = Dict.get(conn.params, :weather) |> parse_weather
-    Weather.new(params) |> Repo.insert
+    params = conn.params[:weather] |> parse_weather
+    Map.merge(%Weather{}, params) |> Repo.insert
     redirect conn, to: "/"
   end
 
   @doc "update"
   put "/:id" do
-    params  = Dict.get(conn.params, :weather) |> parse_weather
+    params  = conn.params[:weather] |> parse_weather
     weather = Repo.get(Weather, get_id(conn.params))
-    weather.update(params) |> Repo.update
+    Map.merge(weather, params) |> Repo.update
     redirect conn, to: "/"
   end
 
@@ -53,16 +53,16 @@ defmodule ApplicationRouter do
   end
 
   defp get_id(param) do
-    Dict.get(param, :id) |> binary_to_integer
+    param[:id] |> binary_to_integer
   end
 
   defp parse_weather(param) do
-    [
-      city:    Dict.get(param, :city),
-      temp_lo: Dict.get(param, :temp_lo) |> String.strip |> to_integer,
-      temp_hi: Dict.get(param, :temp_hi) |> String.strip |> to_integer,
-      prcp:    Dict.get(param, :prcp)    |> String.strip |> to_float
-    ]
+    %{
+      city:    param[:city],
+      temp_lo: param[:temp_lo] |> String.strip |> to_integer,
+      temp_hi: param[:temp_hi] |> String.strip |> to_integer,
+      prcp:    param[:prcp]    |> String.strip |> to_float
+    }
   end
 
   defp to_integer(binary) do
